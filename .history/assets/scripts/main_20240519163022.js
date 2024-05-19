@@ -73,9 +73,9 @@ function initFormHandler() {
 	//            submit button is clicked
 	form.addEventListener('submit', event => {
 		event.preventDefault(); 
-		// B4. TODO - Create a new FormData object from the <form> element
+		// B4. Create a new FormData object from the <form> element
 		const formData = new FormData(form);
-		// B5. TODO - Extract keys and corresponding values from the FormData object
+		// B5. Extract keys and corresponding values from the FormData object
 		const recipeObject = {};
 		for (const [key, value] of formData.entries()) {
 			recipeObject[key] = value;
